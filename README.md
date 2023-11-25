@@ -15,6 +15,6 @@ A Chrome extension that allows you to monitor network calls without opening the 
 - Open the manage extension page on chrome or visit chrome://extension
 - Click on load unpacked 
 - Enable developer mode toggle 
-- Select the manidest.json from the cloned repo
+- Select the manifest.json from the cloned repo
 
 ![Extension UI](images/chrome_ss.png)
