@@ -16,3 +16,7 @@ A Chrome extension that allows you to monitor network calls without opening the 
 - Click on load unpacked 
 - Enable developer mode toggle 
 - Select the manidest.json from the cloned repo
+
+![Extension UI](/images/chrome_ss.png)
+
+![Alt Text](/images/ezgif.com-video-to-gif.gif)
