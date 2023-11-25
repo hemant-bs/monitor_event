@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "Network Monitor Extension",
+  "version": "1.0",
+  "description": "Monitors network requests",
+  "permissions": ["webRequest", "webRequestBlocking", "storage", "tabs", "activeTab", "<all_urls>"],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "48": "icon.png"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  }
+}

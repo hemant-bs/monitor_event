@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Network Requests</title>
+  <style>
+    body {
+      width: 800px;
+      padding: 10px;
+    }
+  
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 10px;
+    }
+  
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+  
+    pre {
+      white-space: pre-wrap;
+    }
+  
+    button.showMoreButton {
+      display: inline-block;
+      padding: 5px 10px;
+      margin: 0;
+    }
+  
+    .details {
+      margin-top: 10px;
+    }
+  </style>
+  
+</head>
+<body>
+  <h2>Network Requests</h2>
+  <button id="clearButton">Clear</button>
+  <table id="requestsTable">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Method</th>
+        <th>URL</th>
+        <th>Event Name</th>
+        <th>Show More</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+  <div id="details" class="details"></div>
+  <script src="popup.js"></script>
+</body>
+</html>
