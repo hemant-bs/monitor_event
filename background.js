@@ -1,10 +1,11 @@
 var requestsData = [];
+var filterURL = ['https://edsstaging.bsstag.com/send_event', 'https://eds.browserstack.com/send_event'];
 
 chrome.webRequest.onBeforeRequest.addListener(
   function (details) {
-    var filterURL = 'https://edsstaging.bsstag.com/send_event';
+    // var filterURL = 'https://edsstaging.bsstag.com/send_event';
 
-    if (details.url === filterURL) {
+    if (filterURL.includes(details.url)) {
       console.log('Request intercepted:', details.method, details.url);
       var postedString = decodeURIComponent(String.fromCharCode.apply(null, new Uint8Array(details.requestBody.raw[0].bytes)));
       var decodedString = decodeURIComponent(postedString);
